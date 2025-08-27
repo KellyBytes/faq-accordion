@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Prompt", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* For older browsers */
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
